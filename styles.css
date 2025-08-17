@@ -1,0 +1,93 @@
+body {
+    background: #B8B8B8;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Press Start 2P', 'Courier New', monospace;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 18px 0 0 0;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    transition: background 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+p{
+    text-align: center;
+    color: #fff;
+    font-family: 'Press Start 2P', 'Courier New', monospace;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 18px 0 0 0;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    transition: background 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+img.grizzou-image {
+    display: block;
+    margin: 20px auto;
+    width: 300px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Sharp corners */
+    box-shadow: 4px 4px 0 #ffcc00, 8px 8px 0 #222; /* Pixel shadow effect */
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 450px;
+    height: 4px;
+    background: #ffcc00; /* Yellow underline */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #B8B8B8;
+}
+
+nav li a {
+    display: block;
+    padding: 14px 32px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Press Start 2P', 'Courier New', monospace; /* Retro font */
+    border-radius: 0; /* Sharp corners */
+    border: 3px solid #222;
+    background: #2d2d2d;
+    box-shadow: 4px 4px 0 #ffcc00, 8px 8px 0 #222; /* Pixel shadow effect */
+    transition: background 0.2s, box-shadow 0.2s;
+    letter-spacing: 1px;
+}
+
+nav li a:hover {
+    background: #ffcc00;
+    color: #222;
+    box-shadow: 4px 4px 0 #2d2d2d, 8px 8px 0 #ffcc00;
+}
