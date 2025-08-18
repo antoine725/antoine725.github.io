@@ -1,0 +1,23 @@
+{
+  "listened": [
+    {
+      "title": "Kid A",
+      "artist": "Radiohead",
+      "year": 2000,
+      "cover_image": "images/kid_a.jpg",
+      "description": "Haunting, experimental, and still fresh after 20+ years.",
+      "grade": 4.5
+    }
+  ],
+  "to_listen": [
+    {
+      "title": "Loveless",
+      "artist": "My Bloody Valentine",
+      "description": "Want to dive into shoegaze and see why this album is so influential."
+    }
+  ],
+  "favorites": [
+    "Kid A - Radiohead",
+    "Blonde - Frank Ocean"
+  ]
+}
