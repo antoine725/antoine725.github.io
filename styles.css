@@ -134,3 +134,16 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
 }
+
+li.favorite {
+    color: #fff;
+    font-family: 'Press Start 2P', 'Courier New', monospace;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    letter-spacing: 1px;
+    transition: background 0.2s, box-shadow 0.2s;
+    position: relative;
+}

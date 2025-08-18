@@ -6,6 +6,7 @@ fetch("albums.json")
     const favList = document.querySelector("#favorites .content");
     data.favorites.forEach(fav => {
       const li = document.createElement("li");
+      li.className = "favorite";
       li.textContent = fav;
       favList.appendChild(li);
     });
@@ -16,7 +17,7 @@ fetch("albums.json")
       const div = document.createElement("div");
       div.className = "album";
       div.innerHTML = `
-        <img class="cover" src="${album.cover}" alt="${album.title} Cover">
+        <img class="cover" src="${album.cover_image}" alt="${album.title} Cover">
         <div class="info">
           <h3>${album.title} – ${album.artist}</h3>
           <p>${album.description}</p>
@@ -31,7 +32,7 @@ fetch("albums.json")
       const div = document.createElement("div");
       div.className = "album";
       div.innerHTML = `
-        <img class="cover" src="${album.cover}" alt="${album.title} Cover">
+        <img class="cover" src="${album.cover_image}" alt="${album.title} Cover">
         <div class="info">
           <h3>${album.title} - ${album.artist} - listened on ${album.date_listened} : ${album.grade}</h3>
           <p>${album.description}</p>
