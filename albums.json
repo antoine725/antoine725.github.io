@@ -1,12 +1,12 @@
 {
   "listened": [
     {
-      "title": "Kid A",
-      "artist": "Radiohead",
-      "year": 2000,
-      "cover_image": "images/kid_a.jpg",
-      "description": "Haunting, experimental, and still fresh after 20+ years.",
-      "grade": 4.5
+      "title": "Random Access Memories",
+      "artist": "Daft Punk",
+      "cover_image": "albums/ram.png",
+      "description": "Exceptional album, I love everything about it, litterally a no skip, this album has followed me for so many years that I associated more than one song of the album to an ex crush...",
+      "grade": "5.0/5.0",
+      "date_listened": "2023-10-01"
     }
   ],
   "to_listen": [

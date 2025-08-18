@@ -1,5 +1,6 @@
 body {
     background: #B8B8B8;
+    margin : 20px;
 }
 
 h1 {
@@ -11,15 +12,13 @@ h1 {
     border: none;
     border-radius: 0;
     box-shadow: none;
-    padding: 18px 0 0 0;
     margin-top: 40px;
     letter-spacing: 1px;
     transition: background 0.2s, box-shadow 0.2s;
     position: relative;
 }
 
-p{
-    text-align: center;
+h2{
     color: #fff;
     font-family: 'Press Start 2P', 'Courier New', monospace;
     font-weight: bold;
@@ -27,11 +26,42 @@ p{
     border: none;
     border-radius: 0;
     box-shadow: none;
-    padding: 18px 0 0 0;
-    margin-left: 40px;
+    margin-top: 40px;
     letter-spacing: 1px;
     transition: background 0.2s, box-shadow 0.2s;
     position: relative;
+}
+
+h3{
+    color: #fff;
+    font-family: 'Press Start 2P', 'Courier New', monospace;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    transition: background 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+p{
+    color: #fff;
+    font-family: 'Press Start 2P', 'Courier New', monospace;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    letter-spacing: 1px;
+    transition: background 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.paragraph{
+    padding: 18px 0 18px 0;
+    text-align: center;
 }
 
 img.grizzou-image {
@@ -41,18 +71,6 @@ img.grizzou-image {
     height: auto; /* Maintain aspect ratio */
     border-radius: 0; /* Sharp corners */
     box-shadow: 4px 4px 0 #ffcc00, 8px 8px 0 #222; /* Pixel shadow effect */
-}
-
-h1::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -10px;
-    width: 450px;
-    height: 4px;
-    background: #ffcc00; /* Yellow underline */
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -90,4 +108,29 @@ nav li a:hover {
     background: #ffcc00;
     color: #222;
     box-shadow: 4px 4px 0 #2d2d2d, 8px 8px 0 #ffcc00;
+}
+
+.album { 
+    margin-bottom: 20px; 
+    padding: 10px; 
+    border: 3px solid #222; 
+    border-radius: 8px;
+    display : flex;
+    align-items: flex-start;
+    box-shadow: 4px 4px 0 #ffcc00, 8px 8px 0 #222; /* Pixel shadow effect */
+}
+ .album .cover {
+    margin-right: 20px;      /* Space between image and text */
+    width: 100px;
+    height: auto;
+}
+.album h3 { margin: 0; }
+
+.album p {
+    text-align: left;
+}
+
+.album .info {
+    display: flex;
+    flex-direction: column;
 }
