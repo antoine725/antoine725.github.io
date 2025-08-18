@@ -1,4 +1,3 @@
-// Fetch JSON and render albums
 fetch("albums.json")
   .then(response => response.json())
   .then(data => {
@@ -10,6 +9,7 @@ fetch("albums.json")
       div.innerHTML = `<h3>${album.title} – ${album.artist}</h3><p>${album.description}</p>`;
       listenedDiv.appendChild(div);
     });
+
     // Render albums to listen
     const toListenDiv = document.querySelector("#to-listen .content");
     data.to_listen.forEach(album => {
@@ -18,6 +18,7 @@ fetch("albums.json")
       div.innerHTML = `<h3>${album.title} – ${album.artist}</h3><p>${album.description}</p>`;
       toListenDiv.appendChild(div);
     });
+
     // Render favorites
     const favList = document.querySelector("#favorites .content");
     data.favorites.forEach(fav => {
