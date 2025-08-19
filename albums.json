@@ -7,6 +7,22 @@
       "description": "An exceptional album - I love everything about it. A complete no skip, this album has followed me for so many years that I've ended up associating more than one song with different old crushes... My personnal favorite.",
       "grade": 5.0,
       "date_listened": "2019-03-30"
+    },
+    {
+      "title": "The Dark Side of the Moon",
+      "artist": "Pink Floyd",
+      "cover_image": "albums/darkside.png",
+      "description": "A very powerful and innovative album, listened to it on a plane coming back from Italy, truly a great experience.",
+      "grade": 4.2,
+      "date_listened": "2025-05-02"
+    },
+    {
+      "title": "Good Kid, M.A.A.D City",
+      "artist": "Kendrick Lamar",
+      "cover_image": "albums/goodkidmaadcity.jpg",
+      "description": "A powerful album that tells a story. Kendrick's flow and the production are top-notch.",
+      "grade": 4.6,
+      "date_listened": "2025-05-02"
     }
   ],
   "to_listen": [

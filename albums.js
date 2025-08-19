@@ -36,7 +36,7 @@ fetch("albums.json")
       div.innerHTML = `
         <img class="cover" src="${album.cover_image}" alt="${album.title} Cover">
         <div class="info">
-          <h3>${album.title} - ${album.artist} - listened on ${album.date_listened} : ${album.grade}/5.0</h3>
+          <h3>${album.title} - ${album.artist} - listened on ${album.date_listened} : ${album.grade}/5</h3>
           <p>${album.description}</p>
         </div>
       `;
