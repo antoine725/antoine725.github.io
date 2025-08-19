@@ -4,11 +4,13 @@ fetch("albums.json")
 
     // Render favorites
     const favList = document.querySelector("#favorites .content");
-    data.favorites.forEach(fav => {
-      const li = document.createElement("li");
-      li.className = "favorite";
-      li.textContent = fav;
-      favList.appendChild(li);
+    data.listened
+      .filter(album => parseFloat(album.grade) >= 4.5) // seuil à ajuster
+      .forEach(album => {
+        const li = document.createElement("li");
+        li.className = "favorite";
+        li.textContent = `${album.title} - ${album.artist} (${album.grade}/5)`;
+        favList.appendChild(li);
     });
 
     // Render albums to listen
@@ -19,7 +21,7 @@ fetch("albums.json")
       div.innerHTML = `
         <img class="cover" src="${album.cover_image}" alt="${album.title} Cover">
         <div class="info">
-          <h3>${album.title} – ${album.artist}</h3>
+          <h3>${album.title} - ${album.artist}</h3>
           <p>${album.description}</p>
         </div>
       `;
@@ -34,7 +36,7 @@ fetch("albums.json")
       div.innerHTML = `
         <img class="cover" src="${album.cover_image}" alt="${album.title} Cover">
         <div class="info">
-          <h3>${album.title} - ${album.artist} - listened on ${album.date_listened} : ${album.grade}</h3>
+          <h3>${album.title} - ${album.artist} - listened on ${album.date_listened} : ${album.grade}/5.0</h3>
           <p>${album.description}</p>
         </div>
       `;

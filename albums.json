@@ -4,8 +4,8 @@
       "title": "Random Access Memories",
       "artist": "Daft Punk",
       "cover_image": "albums/ram.png",
-      "description": "An exceptional album - I love everything about it. A complete no skip, this album has followed me for so many years that I've ended up associating more than one song with an old crush... My personnal favorite.",
-      "grade": "5.0/5.0",
+      "description": "An exceptional album - I love everything about it. A complete no skip, this album has followed me for so many years that I've ended up associating more than one song with different old crushes... My personnal favorite.",
+      "grade": 5.0,
       "date_listened": "2019-03-30"
     }
   ],
@@ -16,9 +16,5 @@
       "cover_image": "albums/donttaptheglass.png",
       "description": "Tyler's latest album, didn't take the time to listen to it yet but I love his music so I hope it will be great."
     }
-  ],
-  "favorites": [
-    "Kid A - Radiohead",
-    "Blonde - Frank Ocean"
   ]
 }
